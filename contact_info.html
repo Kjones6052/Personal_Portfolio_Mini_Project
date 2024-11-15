@@ -1,10 +1,79 @@
 <!DOCTYPE html>
 <!--Provide contact info; email, links to socials -->
 <html>
-<head>
-    <title>Contact Information</title>
-</head>
-<body>
+    <head>
+        <title>Contact Info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Home page, including a welcome message, name, profile picture, and brief biography of Kyle Jones">
+    </head>
+    <style>
+        header {
+        padding: 30px;
+        text-align: center;
+        }
     
-</body>
-</html>
+        nav {
+        float: left;
+        width: 10%;
+        height: 300px;
+        padding: 20px;
+        }
+    
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        }
+    
+        article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        height: 300px; /* only for demonstration, should be removed */
+        }
+    
+        section::after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    
+        footer {
+        padding: 10px;
+        text-align: center;
+        }
+    
+        @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+        }
+    </style>
+    <body style="background-color:lightgray;">
+        <div class="content">
+        <header>
+            <h1>Contact Me</h1>
+        </header>
+        <nav>
+            <h2>Navigation:</h2>
+            <ul>
+                <li><a href="file:///C:/Users/letky/Documents/Coding%20Temple/Personal-Portfolio/home.html">Home</a></li>
+                <li><a href="file:///C:/Users/letky/Documents/Coding%20Temple/Personal-Portfolio/about_me.html">About Me</a></li>
+                <li><a href="file:///C:/Users/letky/Documents/Coding%20Temple/Personal-Portfolio/contact_info.html">Contact Me</a></li>
+                <li><a href="file:///C:/Users/letky/Documents/Coding%20Temple/Personal-Portfolio/tech_skills.html">Technical Skills</a></li>
+                <li><a href="file:///C:/Users/letky/Documents/Coding%20Temple/Personal-Portfolio/past_proects.html">Past Projects</a></li>
+            </ul>
+        </nav>
+        <article>
+            <ul>
+                <li>Phone: (203) 640-7655</li>
+                <li>Email: LetKyleHelpYou@gmail.com</li>
+                <li><a href="https://github.com/Kjones6052">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/kyle-jones-0030a6320/">LinkedIn</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100024125354560">Facebook</a></li>
+            </ul>
+        </article>
+        </div>
+    </body>
+    </html>

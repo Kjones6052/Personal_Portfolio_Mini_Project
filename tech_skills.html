@@ -1,10 +1,105 @@
 <!DOCTYPE html>
 <!-- Highlight technical skills, languages, frameworks, and software proficiencies -->
 <html>
-<head>
-    <title>Technical Skills</title>
-</head>
-<body>
+    <head>
+        <title>Technical Skills</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Highlight technical skills, languages, frameworks, and software proficiencies">
+    </head>
+    <style>
+        header {
+        padding: 30px;
+        text-align: center;
+        }
     
-</body>
-</html>
+        nav {
+        float: left;
+        width: 10%;
+        height: 300px;
+        padding: 20px;
+        }
+    
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        }
+    
+        article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        height: 300px; /* only for demonstration, should be removed */
+        }
+    
+        section::after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    
+        footer {
+        padding: 10px;
+        text-align: center;
+        }
+    
+        @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+        }
+    </style>
+    <body style="background-color:lightgray;">
+        <div class="content">
+        <header>
+            <h1>Technical Skills</h1>
+        </header>
+        <nav>
+            <h2>Navigation:</h2>
+            <ul>
+                <li><a href="file:///C:/Users/letky/Documents/Coding%20Temple/Personal-Portfolio/home.html">Home</a></li>
+                <li><a href="file:///C:/Users/letky/Documents/Coding%20Temple/Personal-Portfolio/about_me.html">About Me</a></li>
+                <li><a href="file:///C:/Users/letky/Documents/Coding%20Temple/Personal-Portfolio/contact_info.html">Contact Me</a></li>
+                <li><a href="file:///C:/Users/letky/Documents/Coding%20Temple/Personal-Portfolio/tech_skills.html">Technical Skills</a></li>
+                <li><a href="file:///C:/Users/letky/Documents/Coding%20Temple/Personal-Portfolio/past_proects.html">Past Projects</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h3>Programming Languages Learned:</h3>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>HTML</li>
+            </ul>
+            <hr>
+            <h3>Python:</h3>
+            <p>
+                Python was the first programming language that I learned, starting with the basics like data types, working with loops, developing functions, and handling errors. Then
+                I moved onto more detailed processes like file handling, regular expressions, and Object Oriented Programming (aka: OOP) before learning how to integrate a database.
+            </p>
+            <h3>SQL:</h3>
+            <p>
+                SQL and database management was fun to learn and implement, integrating databases into application operations using SQL. The simplicity of SQL made it interesting
+                to me, and I enjoyed using SQLAlchemy to simplify functions even more. 
+            </p>
+            <h3>HTML:</h3>
+            <p>
+                Like many people around my age, I had my first interactions with HTML in the days of Myspace where I used HTML to modify the look of my Myspace page. After learning 
+                more about HTML at Coding Temple, I now understand and know how to use HTML to build web pages and web sites, formatting the pages to be user friendly and easily readable.
+            </p>
+            <hr>
+            <h3>Reflecting on What I've Learned</h3>
+            <p>
+                I've learned a lot about programming and writing code for different uses and functions. From creating To-Do List applications to creating System Management 
+                applications for a Fitness Center or Library, utlizing databases to hold and manage data using tables and objects, and creating web forms and integrated web pages
+                I am now confident in my ability to create a fully functional system using the different programming languages I have learned. I look forward to using all of the
+                skills and coding abilities that I've obtained, and I will continue on this journey of education in coding.
+            </p>
+            <footer style="background-color:lightgray;">
+                <p>Created, written, and posted by Kyle Jones. Add me on <a href="https://www.linkedin.com/in/kyle-jones-0030a6320/">LinkedIn</a> and <a href="https://www.facebook.com/profile.php?id=100024125354560">Facebook</a></p>
+            </footer>
+        </article>
+        </div>
+    </body>
+    </html>
