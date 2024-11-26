@@ -6,74 +6,58 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Home page, including a welcome message, name, profile picture, and brief biography of Kyle Jones">
+        <link rel="stylesheet" href="./styles.css">
     </head>
-    <style>
-        header {
-        padding: 30px;
-        text-align: center;
-        }
-    
-        nav {
-        float: left;
-        width: 10%;
-        height: 300px;
-        padding: 20px;
-        }
-    
-        nav ul {
-        list-style-type: none;
-        padding: 0;
-        }
-    
-        article {
-        float: left;
-        padding: 20px;
-        width: 70%;
-        height: 300px; /* only for demonstration, should be removed */
-        }
-    
-        section::after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-    
-        footer {
-        padding: 10px;
-        text-align: center;
-        }
-    
-        @media (max-width: 600px) {
-        nav, article {
-            width: 100%;
-            height: auto;
-        }
-        }
-    </style>
-    <body style="background-color:lightgray;">
-        <div class="content">
-        <header>
-            <h1>Contact Me</h1>
-        </header>
-        <nav>
-            <h2>Navigation:</h2>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./about_me.html">About Me</a></li>
-                <li><a href="./contact_info.html">Contact Me</a></li>
-                <li><a href="./tech_skills.html">Technical Skills</a></li>
-                <li><a href="./past_proects.html">Past Projects</a></li>
-            </ul>
-        </nav>
-        <article>
-            <ul>
-                <li>Phone: (203) 640-7655</li>
-                <li>Email: LetKyleHelpYou@gmail.com</li>
-                <li><a href="https://github.com/Kjones6052">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/kyle-jones-0030a6320/">LinkedIn</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100024125354560">Facebook</a></li>
-            </ul>
-        </article>
+    <body>
+        <div>
+            <header>
+                <h1>Contact Me</h1>
+            </header>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about_me.html">About Me</a></li>
+                    <li><a href="./contact_info.html">Contact Me</a></li>
+                    <li><a href="./tech_skills.html">Technical Skills</a></li>
+                    <li><a href="./past_projects.html">Past Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contactmain">
+            <section>
+                <form action="">
+                    <fieldset>
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="name" id="name" placeholder="enter name" aria-label="enter name">
+                    </fieldset>
+                    <fieldset>
+                        <label for="phone">Phone Number:</label>
+                        <input type="phone" name="phone" id="phone" placeholder="enter phone number" aria-label="enter phone number">
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="email" placeholder="enter email address" aria-label="enter email address">
+                    </fieldset>
+                    <fieldset>
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" id="comments" placeholder="enter comments" aria-label="enter comments"></textarea>
+                    <fieldset>
+                        <button type="submit">Click Here and Kyle Will Contact You!</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <h3>Contact Info:</h3>
+                <ul>
+                    <li>Phone: (203) 640-7655</li>
+                    <li>Email: LetKyleHelpYou@gmail.com</li>
+                    <li><a href="https://github.com/Kjones6052">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/kyle-jones-0030a6320/"><img src="./iglogo.png" alt="Instagram" class="animate"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100024125354560"><img src="./facebooklogo.png" alt="Facebook" class="animate"></a></li>
+                </ul>
+            </section>
         </div>
     </body>
     </html>

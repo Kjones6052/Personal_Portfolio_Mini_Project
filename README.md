@@ -11,3 +11,8 @@ about me page, get a look at some code snippets and descriptions of the projects
 
 Each page has a navigation system setup to get to any of the other pages. There are also links provided to the repositories where the projects completed are stored. 
 
+Update:
+A new file was added called 'styles.css' which contains CSS styling for all the pages included in this project. Every page has its own section 
+in the css file, and every single section of every page has styling applied. Some elements include hover effects, animations, and typography applied. The footer on any page with enough content to require even the smallest amount of scrolling was changed to be a 2nd nav bar for ease of use and movement between pages. Lastly, a contact form was added to the contact me page.
+
+Please enjoy!

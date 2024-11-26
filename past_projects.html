@@ -6,83 +6,54 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Showcase past project and works, include project descriptions, images, links, and technologies or tools used">
+        <link rel="stylesheet" href="./styles.css">
     </head>
-    <style>
-    header {
-    padding: 30px;
-    text-align: center;
-    }
-
-    nav {
-    float: left;
-    width: 10%;
-    height: 300px;
-    padding: 20px;
-    }
-
-    nav ul {
-    list-style-type: none;
-    padding: 0;
-    }
-
-    article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    height: 300px; /* only for demonstration, should be removed */
-    }
-
-    section::after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-
-    footer {
-    padding: 10px;
-    text-align: center;
-    }
-
-    @media (max-width: 600px) {
-    nav, article {
-        width: 100%;
-        height: auto;
-    }
-    }
-    </style>
-    <body style="background-color:lightgray;">
-        <div class="content">
-        <header>
-            <h1>Past Projects</h1>
-        </header>
-        <nav>
-            <h2>Navigation:</h2>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./about_me.html">About Me</a></li>
-                <li><a href="./contact_info.html">Contact Me</a></li>
-                <li><a href="./tech_skills.html">Technical Skills</a></li>
-                <li><a href="./past_proects.html">Past Projects</a></li>
-            </ul>
-        </nav>
-        <article>
+    <body>
+        <div>
+            <header>
+                <h1>Past Projects</h1>
+            </header>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about_me.html">About Me</a></li>
+                    <li><a href="./contact_info.html">Contact Me</a></li>
+                    <li><a href="./tech_skills.html">Technical Skills</a></li>
+                    <li><a href="./past_projects.html">Past Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <section class="projectssidebar">
+                <h3>List of Past Projects:</h3>
+                <ol>
+                    <li><a href="#To-Do List Application">To-Do List Application</a></li>
+                    <li><a href="#Contact Manager Application">Contact Manager Application</a></li>
+                    <li><a href="#Library Management System">Library Management System</a></li>
+                    <li><a href="#Library Database Integration">Library Database Integration</a></li>
+                    <li><a href="#E Commerce API">E Commerce API</a></li>
+                </ol>
+            </section>
+        </div>
+        <div class="projectsmain">
             <section id="To-Do List Application">
                 <h3>To-Do List Application</h3>
                 <h4><a href="https://github.com/Kjones6052/Python_To_Do_List_Application_Mini_Project">Link to Project Repository</a></h4>
-                <img src="./To Do List.png" alt="photo of code written for the to do list application" width="750" height="400">
-                <h4>Project Description</h4>
+                <img src="./To Do List.png" alt="photo of code written for the to do list application" width="750" height="400" class="highlight">
+                <h4>Project Description:</h4>
                 <p>
                     The To-Do List applications was created and designed to allow a user to manage a list of tasks to be done. It uses user input that allows 
                     the user to add a task, view all tasks, mark a task as complete, and delete a task. This project was done using a single file to hold all
                     code and was the first project that I created during my time with Coding Temple.
                 </p>
             </section>
-            <hr>
             <section id="Contact Manager Application">
                 <h3>Contact Manager Application</h3>
                 <h4><a href="https://github.com/Kjones6052/Contact_Manager_Mini_Project">Link to Project Repository</a></h4>
-                <img src="./Contact Manager Photo.png" alt="photo of code written for the contact manager application" width="750" height="400">
-                <h4>Project Description</h4>
+                <img src="./Contact Manager Photo.png" alt="photo of code written for the contact manager application" width="750" height="400" class="highlight">
+                <h4>Project Description:</h4>
                 <p>
                     The contact manager application was created and designed to organize a group of contacts into a dictionary where the full name is the key
                     and the values are the person's contact information. The application uses a command line interface to allow a user to add a contact, search for and display
@@ -92,12 +63,11 @@
                     interface. 
                 </p>
             </section>
-            <hr>
             <section id="Library Management System">
                 <h3>Library Management System</h3>
                 <h4><a href="https://github.com/Kjones6052/Library_Management_System_Mini_Project">Link to Project Repository</a></h4>
-                <img src="./Library Management System.png" alt="photo of code written for the library management system" width="600" height="500">
-                <h4>Project Description</h4>
+                <img src="./Library Management System.png" alt="photo of code written for the library management system" width="600" height="500" class="highlight">
+                <h4>Project Description:</h4>
                 <p>
                     The library management system is an application which was created and designed to do what it sounds like, manage a system of books,
                     authors, and users in a library. Utilizing class structures to create objects the application allows a user to go through a menu system
@@ -108,12 +78,11 @@
                     author, and view all authors. The application also uses regular expressions to verify data input is received in the correct format. 
                 </p>
             </section>
-            <hr>
             <section id="Library Database Integration">
                 <h3>Library Database Integration</h3>
                 <h4><a href="https://github.com/Kjones6052/Library_Database_Integration_Mini_Project">Link to Project Repository</a></h4>
-                <img src="./Library Database Integration.png" alt="photo of code written for the library database integration" width="750" height="500">
-                <h4>Project Description</h4>
+                <img src="./Library Database Integration.png" alt="photo of code written for the library database integration" width="750" height="500" class="highlight">
+                <h4>Project Description:</h4>
                 <p>
                     This project carries on in the same direction as the Library Management System and adds in database integration and operations. In addition
                     to the original project, I incorporated a MySQL database to hold the data and adjusted the methods within the application to work with the 
@@ -121,12 +90,11 @@
                     programming language, and provided a great base of knowledge for future projects.
                 </p>
             </section>
-            <hr>
             <section id="E Commerce API">
                 <h3>E Commerce API</h3>
                 <h4><a href="https://github.com/Kjones6052/E_Commerce_API_Mini_Project">Link to Project Repository</a></h4>
-                <img src="./E Commerce API.png" alt="photo of code written for the E Commerce API project" width="750" height="500">
-                <h4>Project Description</h4>
+                <img src="./E Commerce API.png" alt="photo of code written for the E Commerce API project" width="750" height="500" class="highlight">
+                <h4>Project Description:</h4>
                 <p>
                     This project is a great mix of all the tools and abilities that I learned at Coding Temple. The first step in creating this project
                     was to create a Python Virtual Environment where I then installed several packages: MySQl Connector, Flask, Marshmallow, and SQLAlchemy.
@@ -137,23 +105,19 @@
                     I obtained during my education with Coding Temple.
                 </p>
             </section>
-        </article>
-        <aside>
-            <h3>List of Past Projects:</h3>
-            <ol>
-                <li><a href="#To-Do List Application">To-Do List Application</a></li>
-                <li><a href="#Contact Manager Application">Contact Manager Application</a></li>
-                <li><a href="#Library Management System">Library Management System</a></li>
-                <li><a href="#Library Database Integration">Library Database Integration</a></li>
-                <li><a href="#E Commerce API">E Commerce API</a></li>
-            </ol>
-        </aside>
-        <footer style="background-color:lightgray;">
-            <p>
-                If you want to see a full list of all files I've created feel free to jump over to<a href="https://github.com/Kjones6052">Github</a> and take a look. New projects and updates are saved regularly.
-            </p>
-            <p>Created, written, and posted by Kyle Jones. Add me on <a href="https://www.linkedin.com/in/kyle-jones-0030a6320/">LinkedIn</a> and <a href="https://www.facebook.com/profile.php?id=100024125354560">Facebook</a></p>
-        </footer>
+        </div>
+        <div>
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./about_me.html">About Me</a></li>
+                        <li><a href="./contact_info.html">Contact Me</a></li>
+                        <li><a href="./tech_skills.html">Technical Skills</a></li>
+                        <li><a href="./past_projects.html">Past Projects</a></li>
+                    </ul>
+                </nav>
+            </footer>
         </div>
     </body>
     </html>

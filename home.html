@@ -6,80 +6,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Home page, including a welcome message, name, profile picture, and brief biography of Kyle Jones">
+    <link rel="stylesheet" href="./styles.css">
 </head>
-<style>
-    header {
-    padding: 30px;
-    text-align: center;
-    }
-
-    nav {
-    float: left;
-    width: 10%;
-    height: 300px;
-    padding: 20px;
-    }
-
-    nav ul {
-    list-style-type: none;
-    padding: 0;
-    }
-
-    article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    height: 300px; /* only for demonstration, should be removed */
-    }
-
-    section::after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-
-    footer {
-    padding: 10px;
-    text-align: center;
-    }
-
-    @media (max-width: 600px) {
-    nav, article {
-        width: 100%;
-        height: auto;
-    }
-    }
-</style>
-<body style="background-color:lightgray;">
-    <div class="content">
-    <header>
-        <h1>Home Page</h1>
-    </header>
-    <nav>
-        <h2>Navigation:</h2>
-        <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./about_me.html">About Me</a></li>
-            <li><a href="./contact_info.html">Contact Me</a></li>
-            <li><a href="./tech_skills.html">Technical Skills</a></li>
-            <li><a href="./past_proects.html">Past Projects</a></li>
-        </ul>
-    </nav>
-    <hr>
-    <article>
-        <h2>Welcome to My Website</h2>
-        <p>My name is Kyle Jones and thank you for visiting.</p>
-        <img src="./me.jpg" alt="photo of Kyle Jones" width="300" height="400">
-        <p>
-            I've been a real estate agent for the last 7 years, but never really found that industry to be interesting or enjoyable. I have had a long standing
-            interest in learning how to code, and in August of 2024 I enrolled with Coding Temple to begin my journey into coding. At Coding Temple I've learned
-            how to use programming languages like Python, SQL, and HTML to build applications, databases, and websites. The journey has been a lot of fun but also 
-            challenging, and I look forward to doing more projects and working in the tech industry as a software engineer.
-        </p>
-    </article>
+<body>
+    <div>
+        <header>
+            <h1>Home Page</h1>
+        </header>
     </div>
-    <footer style="background-color:lightgray;">
-        <p>Created, written, and posted by Kyle Jones. Add me on <a href="https://www.linkedin.com/in/kyle-jones-0030a6320/">LinkedIn</a> and <a href="https://www.facebook.com/profile.php?id=100024125354560">Facebook</a></p>
-    </footer>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about_me.html">About Me</a></li>
+                <li><a href="./contact_info.html">Contact Me</a></li>
+                <li><a href="./tech_skills.html">Technical Skills</a></li>
+                <li><a href="./past_projects.html">Past Projects</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <div class="home">
+        <article>
+            <h2>Welcome to My Website</h2>
+            <img src="./me.jpg" alt="photo of Kyle Jones" class="highlight">
+            <p>
+                My name is Kyle Jones, and I've been a real estate agent for the last 7 years, but never really found that industry to be interesting or enjoyable. I have had a long standing
+                interest in learning how to code, and in August of 2024 I enrolled with Coding Temple to begin my journey into coding. At Coding Temple I've learned
+                how to use programming languages like Python, SQL, HTML, and CSS to build applications, databases, and websites. The journey has been a lot of fun but also 
+                challenging, and I look forward to doing more coding projects and working with the skills and abilities that I've obtained throughout my education.
+            </p>
+            <p>
+                Please, feel free to click around and read through the pages. Learn more about me and my journey on the about me page, or peruse through my past
+                projects and technical skills I've learned along the way. If you have any questions or comments, you can find my contact info on the contact me page.
+            </p>
+        </article>
+    </div>
+    <div>
+        <footer class="nonnav">
+            <p>Created, written, and posted by Kyle Jones. Add me on <a href="https://www.linkedin.com/in/kyle-jones-0030a6320/">LinkedIn</a> and <a href="https://www.facebook.com/profile.php?id=100024125354560">Facebook</a></p>
+        </footer>
+    </div>
 </body>
 </html>

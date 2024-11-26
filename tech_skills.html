@@ -6,73 +6,36 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Highlight technical skills, languages, frameworks, and software proficiencies">
+        <link rel="stylesheet" href="./styles.css">
     </head>
-    <style>
-        header {
-        padding: 30px;
-        text-align: center;
-        }
-    
-        nav {
-        float: left;
-        width: 10%;
-        height: 300px;
-        padding: 20px;
-        }
-    
-        nav ul {
-        list-style-type: none;
-        padding: 0;
-        }
-    
-        article {
-        float: left;
-        padding: 20px;
-        width: 70%;
-        height: 300px; /* only for demonstration, should be removed */
-        }
-    
-        section::after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-    
-        footer {
-        padding: 10px;
-        text-align: center;
-        }
-    
-        @media (max-width: 600px) {
-        nav, article {
-            width: 100%;
-            height: auto;
-        }
-        }
-    </style>
-    <body style="background-color:lightgray;">
-        <div class="content">
-        <header>
-            <h1>Technical Skills</h1>
-        </header>
-        <nav>
-            <h2>Navigation:</h2>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./about_me.html">About Me</a></li>
-                <li><a href="./contact_info.html">Contact Me</a></li>
-                <li><a href="./tech_skills.html">Technical Skills</a></li>
-                <li><a href="./past_proects.html">Past Projects</a></li>
-            </ul>
-        </nav>
-        <article>
+    <body>
+        <div>
+            <header>
+                <h1>Technical Skills</h1>
+            </header>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about_me.html">About Me</a></li>
+                    <li><a href="./contact_info.html">Contact Me</a></li>
+                    <li><a href="./tech_skills.html">Technical Skills</a></li>
+                    <li><a href="./past_projects.html">Past Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="techsidebar">
             <h3>Programming Languages Learned:</h3>
             <ul>
                 <li>Python</li>
                 <li>SQL</li>
                 <li>HTML</li>
+                <li>CSS</li>
             </ul>
+        </div>
             <hr>
+        <div class="techmain">
             <h3>Python:</h3>
             <p>
                 Python was the first programming language that I learned, starting with the basics like data types, working with loops, developing functions, and handling errors. Then
@@ -88,18 +51,36 @@
                 Like many people around my age, I had my first interactions with HTML in the days of Myspace where I used HTML to modify the look of my Myspace page. After learning 
                 more about HTML at Coding Temple, I now understand and know how to use HTML to build web pages and web sites, formatting the pages to be user friendly and easily readable.
             </p>
-            <hr>
-            <h3>Reflecting on What I've Learned</h3>
+            <h3>CSS:</h3>
+            <p>
+                Cascading Style Sheets, or CSS for short, was a nice addition to the tools and abilities that I've learned in coding. Learning how to turn basic HTML documents and web
+                pages into interactive, responsive, and beautifully designed websites has been not only interesting but a lot of fun. Using classes and psuedo-classes to assign styling 
+                effects to different sections of a webpage, and using animations to enhance the style of a webpage. I look forward to using this skills more in the future of my coding
+                journey.
+            </p>
+        </div>
+        <hr>
+        <div class="techfoot">
+            <h3>Reflecting on What I've Learned:</h3>
             <p>
                 I've learned a lot about programming and writing code for different uses and functions. From creating To-Do List applications to creating System Management 
                 applications for a Fitness Center or Library, utlizing databases to hold and manage data using tables and objects, and creating web forms and integrated web pages
-                I am now confident in my ability to create a fully functional system using the different programming languages I have learned. I look forward to using all of the
+                with delicate and interactive styling, I am now confident in my ability to create a fully functional system using the different programming languages I have learned. I look forward to using all of the
                 skills and coding abilities that I've obtained, and I will continue on this journey of education in coding.
             </p>
-            <footer style="background-color:lightgray;">
-                <p>Created, written, and posted by Kyle Jones. Add me on <a href="https://www.linkedin.com/in/kyle-jones-0030a6320/">LinkedIn</a> and <a href="https://www.facebook.com/profile.php?id=100024125354560">Facebook</a></p>
+        </div>
+        <div>
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./about_me.html">About Me</a></li>
+                        <li><a href="./contact_info.html">Contact Me</a></li>
+                        <li><a href="./tech_skills.html">Technical Skills</a></li>
+                        <li><a href="./past_projects.html">Past Projects</a></li>
+                    </ul>
+                </nav>
             </footer>
-        </article>
         </div>
     </body>
     </html>

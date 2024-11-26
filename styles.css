@@ -1,0 +1,176 @@
+/* This file contains all of the CSS styling for all of the HTML documents included in this project */
+
+/* Creating uniform styling for the background color of each page */
+body {
+    background-color: rgba(135, 206, 235);
+}
+
+/* Creating uniform styling for the h1 header at the top of each page */
+header {
+    text-align: center;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    font-size: x-large;
+    text-shadow: 2px 2px white;
+}
+
+/* Creating uniform styling for the nav links at the top of each page, this will also be used as the footer for pages with more content */
+nav li {
+    display: inline;
+}
+nav li:hover {
+    background-color: white;
+}
+nav ul {
+    text-align: center;
+}
+
+/* Creating a hover effect for images */
+.highlight:hover {
+    box-shadow: 5px 5px 5px 5px white;
+    opacity: 0.5;
+}
+
+/* Creating style for links in the footer that do not mimic the nav bar */
+.nonnav {
+    text-align: center;
+}
+.nonnav a:hover {
+    color: black;
+}
+
+/* Creating a style for the home page elements */
+.home {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    padding: 25px;
+    margin: 25px;
+}
+.home img {
+    float: left;
+    margin: 15px;
+    width: 150px;
+    height: 200px;
+}
+.home h2 {
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Creating a style for the about me page elements */
+.about {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: large;
+    margin: 10px;
+    padding: 10px;
+}
+.about h3 {
+    margin: 5px;
+}
+
+/* Creating a style for the tech skills page elements */
+.techsidebar {
+    display: block;
+    float: left;
+    border: solid black 3px;
+    width: 150px;
+    margin: 5px;
+}
+.techmain {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: large;
+    margin: 10px;
+    padding: 10px;
+}
+.techmain h3 {
+    margin: 5px;
+}
+.techfoot {
+    font-size: large;
+    margin: 10px;
+    padding: 10px;
+}
+.techfoot h3 {
+    text-decoration: underline;
+}
+
+/* Creating a style for the past projects page elements */
+.projectssidebar {
+    display: block;
+    float: right;
+    border: solid black 3px;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+}
+.projectsmain {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+}
+.projectsmain h3 {
+    text-decoration: underline;
+    font-size: larger;
+}
+.projectsmain section {
+    border-bottom: solid 5px;
+}
+.projectsmain a:hover {
+    background-color: white;
+}
+
+/* Creating a style for the contact me page elements */
+.contactmain {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: larger;
+}
+.contactmain form {
+    border: solid 3px;
+    margin: 15px;
+}
+.contactmain form:focus{
+    color: gray;
+}
+button {
+    margin: 10px;
+    padding: 5px;
+    background-color: red;
+    font-size: large;
+}
+button:hover {
+    background-color: white;
+    box-shadow: black 5px 5px;
+}
+
+/* Creating focus for input sections */
+input:focus {
+    background-color: gray;
+}
+
+/* Creating animation hover effect for Facebook and Instagram icons */
+.animate {
+    width: 45px;
+    height: 45px;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.animate:hover {
+    animation: rotate 5s linear infinite;
+}
